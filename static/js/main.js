@@ -39,13 +39,21 @@ $(document).ready(function() {
             country = 'uk'
         } else if (country == 'England') {
             country = 'uk'
+        } else if (country == 'United kingdom') {
+            country = 'uk'
+        } else if (country == 'united Kingdom') {
+            country = 'uk'
         } else if (country == 'england') {
             country = 'uk'
         } else if (country == 'us') {
             country = 'usa'
         } else if (country == 'united states') {
             country = 'usa'
-        } else if (country == 'United Stateds') {
+        } else if (country == 'United States') {
+            country = 'usa'
+        } else if (country == 'united States') {
+            country = 'usa'
+        } else if (country == 'United states') {
             country = 'usa'
         }
 
