@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moveo Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="static/css/style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+  <div class="header">
+    <h1 id='title'>Moveo Weather</h1>
+    <div class="searchDiv">
+      <input id='city' type="text" placeholder="Type city e.g berlin">
+      <input id='country' type="text" placeholder="Type country e.g germany">
+      <button id="enterButton"><i class="fas fa-search"></i></button>
+
+    </div>
+  </div>
+  <div id="info"></div>
+  <div class="changingInfos">
+    <h2 id="location"></h2>
+    <h3 id="temperature"></h3>
+    <p id="humidity"></p>
+    <p id="wind"></p>
+    <img id='icon' src="">
+  </div>
+  <hr>
+
+  <div class="changingInfos">
+      <h2 id="location2"></h2>
+      <h3 id="temperature2"></h3>
+      <p id="humidity2"></p>
+      <p id="wind2"></p>
+      <img id='icon2' src="">
+  </div>
+  <script src="static/js/main.js"></script>
+</body>
+
+</html>
