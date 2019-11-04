@@ -40,7 +40,7 @@ def location():
     icon = tree.xpath('//*[@id="cur-weather"]/@src')
     try:
        return json.dumps({
-           'location': location_name[0],
+            'location': location_name[0],
             'temperature': temperature[0],
             'humidity': 'Humidity: ' + humidity_value[0],
             'wind': wind_value[0],

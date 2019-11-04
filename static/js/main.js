@@ -5,9 +5,10 @@ $(document).ready(function() {
             document.getElementById('info').innerHTML = "Did not found results"
         }
         else {
+            var removeChar = res.temperature.replace('Feels Like:','');
             document.getElementById('info').innerHTML = ""
             document.getElementById('location').innerHTML = res.location
-            document.getElementById('temperature').innerHTML = res.temperature
+            document.getElementById('temperature').innerHTML = removeChar
             document.getElementById('humidity').innerHTML = res.humidity
             document.getElementById('wind').innerHTML = res.wind
             document.getElementById('icon').src = 'https:' + res.icon
@@ -21,12 +22,13 @@ $(document).ready(function() {
 
     $.get("/location?country=Israel&city=Tel-Aviv", function(data, status){
         const res = JSON.parse(data)
+        var removeChar = res.temperature.replace('Feels Like:','');
         document.getElementById('info').innerHTML = ""
-            document.getElementById('location2').innerHTML = res.location
-            document.getElementById('temperature2').innerHTML = res.temperature
-            document.getElementById('humidity2').innerHTML = res.humidity
-            document.getElementById('wind2').innerHTML = res.wind
-            document.getElementById('icon2').src = 'https:' + res.icon
+        document.getElementById('location2').innerHTML = res.location
+        document.getElementById('temperature2').innerHTML = removeChar
+        document.getElementById('humidity2').innerHTML = res.humidity
+        document.getElementById('wind2').innerHTML = res.wind
+        document.getElementById('icon2').src = 'https:' + res.icon
     });
 
 
