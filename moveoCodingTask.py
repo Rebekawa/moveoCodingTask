@@ -20,11 +20,6 @@ def send_js(path):
 def send_css(path):
     return send_from_directory('static/css/', path)
 
-@app.route('/search')
-def search_location():
-    url = "https://www.timeanddate.com/weather/?query=%s" % (request.args.get('search'))
-    return
-
 # get weather given the city name
 @app.route('/location')
 def location():

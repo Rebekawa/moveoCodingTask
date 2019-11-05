@@ -10,6 +10,7 @@ body{
     text-align: center;
     background-image: url('/static/images/weather-header-NEW-2-800x244.jpg');
     margin: 0;
+    padding: 2.5vh;
 }
 
 #title{
