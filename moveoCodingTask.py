@@ -1,11 +1,8 @@
 import requests
 from flask import Flask, request, send_from_directory
 from lxml import html
-import lxml
-from jinja2 import Template
-
 import json
-from lxml import etree
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -19,6 +16,7 @@ def send_js(path):
 @app.route('/static/css/<path:path>')
 def send_css(path):
     return send_from_directory('static/css/', path)
+
 
 # get weather given the city name
 @app.route('/location')
